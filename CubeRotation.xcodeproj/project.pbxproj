@@ -13,6 +13,9 @@
 		9EA5514C25191BE3005DC733 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EA5514A25191BE3005DC733 /* Main.storyboard */; };
 		9EA5514E25191BE5005DC733 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EA5514D25191BE5005DC733 /* Assets.xcassets */; };
 		9EA5515125191BE5005DC733 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EA5514F25191BE5005DC733 /* LaunchScreen.storyboard */; };
+		9EA5515C25191CD4005DC733 /* RotationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA5515A25191CD4005DC733 /* RotationViewController.swift */; };
+		9EA5515D25191CD4005DC733 /* RotationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EA5515B25191CD4005DC733 /* RotationViewController.xib */; };
+		9EA5516225191D42005DC733 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA5516125191D42005DC733 /* Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		9EA5514D25191BE5005DC733 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9EA5515025191BE5005DC733 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9EA5515225191BE5005DC733 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9EA5515A25191CD4005DC733 /* RotationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotationViewController.swift; sourceTree = "<group>"; };
+		9EA5515B25191CD4005DC733 /* RotationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RotationViewController.xib; sourceTree = "<group>"; };
+		9EA5516125191D42005DC733 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,8 @@
 		9EA5514325191BE3005DC733 /* CubeRotation */ = {
 			isa = PBXGroup;
 			children = (
+				9EA5516025191D30005DC733 /* Extension */,
+				9EA5515925191CBB005DC733 /* ViewController */,
 				9EA5514425191BE3005DC733 /* AppDelegate.swift */,
 				9EA5514625191BE3005DC733 /* SceneDelegate.swift */,
 				9EA5514825191BE3005DC733 /* ViewController.swift */,
@@ -65,6 +73,23 @@
 				9EA5515225191BE5005DC733 /* Info.plist */,
 			);
 			path = CubeRotation;
+			sourceTree = "<group>";
+		};
+		9EA5515925191CBB005DC733 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9EA5515A25191CD4005DC733 /* RotationViewController.swift */,
+				9EA5515B25191CD4005DC733 /* RotationViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		9EA5516025191D30005DC733 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				9EA5516125191D42005DC733 /* Extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +151,7 @@
 			files = (
 				9EA5515125191BE5005DC733 /* LaunchScreen.storyboard in Resources */,
 				9EA5514E25191BE5005DC733 /* Assets.xcassets in Resources */,
+				9EA5515D25191CD4005DC733 /* RotationViewController.xib in Resources */,
 				9EA5514C25191BE3005DC733 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,6 +165,8 @@
 			files = (
 				9EA5514925191BE3005DC733 /* ViewController.swift in Sources */,
 				9EA5514525191BE3005DC733 /* AppDelegate.swift in Sources */,
+				9EA5516225191D42005DC733 /* Extension.swift in Sources */,
+				9EA5515C25191CD4005DC733 /* RotationViewController.swift in Sources */,
 				9EA5514725191BE3005DC733 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,6 +317,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GVQ3X8X5LZ;
 				INFOPLIST_FILE = CubeRotation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,6 +337,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GVQ3X8X5LZ;
 				INFOPLIST_FILE = CubeRotation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
